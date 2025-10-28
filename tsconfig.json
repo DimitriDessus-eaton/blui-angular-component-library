@@ -4,6 +4,7 @@
       "baseUrl": ".",
       "sourceMap": true,
       "declaration": false,
+      "esModuleInterop": true,
       "target": "ES2022",
       "module": "es2020",
       "moduleResolution": "node",

@@ -2,7 +2,7 @@ import { NgModule, SecurityContext } from '@angular/core';
 import { ScaffoldComponent } from './scaffold/scaffold.component';
 import { MatLegacyTabsModule as MatTabsModule } from '@angular/material/legacy-tabs';
 import { MarkdownModule, MARKED_OPTIONS } from 'ngx-markdown';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { MatLegacyFormFieldModule as MatFormFieldModule } from '@angular/material/legacy-form-field';
 import { MatLegacyInputModule as MatInputModule } from '@angular/material/legacy-input';
@@ -27,8 +27,7 @@ import { KnobNumberComponent } from './knobs/knob-number.component';
 import { MatLegacySliderModule as MatSliderModule } from '@angular/material/legacy-slider';
 import { OverlayModule } from '@angular/cdk/overlay';
 
-@NgModule({
-    declarations: [
+@NgModule({ declarations: [
         KnobTextComponent,
         ScaffoldComponent,
         ViewCodeButtonComponent,
@@ -39,41 +38,6 @@ import { OverlayModule } from '@angular/cdk/overlay';
         KnobColorComponent,
         KnobSelectComponent,
         KnobNumberComponent,
-    ],
-    imports: [
-        AppCommonComponentsModule,
-        CommonModule,
-        ColorPickerModule,
-        MatIconModule,
-        MatCheckboxModule,
-        MatExpansionModule,
-        HttpClientModule,
-        MatFormFieldModule,
-        MatSliderModule,
-        OverlayModule,
-        MatInputModule,
-        MatTabsModule,
-        MatSelectModule,
-        FormsModule,
-        MatButtonModule,
-        MarkdownModule.forRoot({
-            loader: HttpClientModule,
-            sanitize: SecurityContext.NONE,
-        }),
-        MatDividerModule,
-        ReactiveFormsModule,
-    ],
-    providers: [
-        {
-            provide: MARKED_OPTIONS,
-            useValue: {
-                gfm: true,
-                breaks: false,
-                pedantic: false,
-                smartLists: true,
-                smartypants: false,
-            },
-        },
     ],
     exports: [
         ExampleCodeComponent,
@@ -90,6 +54,36 @@ import { OverlayModule } from '@angular/cdk/overlay';
         KnobColorComponent,
         KnobSelectComponent,
         KnobNumberComponent,
-    ],
-})
+    ], imports: [AppCommonComponentsModule,
+        CommonModule,
+        ColorPickerModule,
+        MatIconModule,
+        MatCheckboxModule,
+        MatExpansionModule,
+        MatFormFieldModule,
+        MatSliderModule,
+        OverlayModule,
+        MatInputModule,
+        MatTabsModule,
+        MatSelectModule,
+        FormsModule,
+        MatButtonModule,
+        MarkdownModule.forRoot({
+            loader: HttpClientModule,
+            sanitize: SecurityContext.NONE,
+        }),
+        MatDividerModule,
+        ReactiveFormsModule], providers: [
+        {
+            provide: MARKED_OPTIONS,
+            useValue: {
+                gfm: true,
+                breaks: false,
+                pedantic: false,
+                smartLists: true,
+                smartypants: false,
+            },
+        },
+        provideHttpClient(withInterceptorsFromDi()),
+    ] })
 export class SharedCompDocsModule {}

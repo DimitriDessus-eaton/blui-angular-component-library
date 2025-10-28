@@ -42,7 +42,7 @@ export const THREE_LINER = `<div id="app-bar-three-liner-example" class="three-l
                 background: white;
             }
             ::ng-deep .three-liner-scroll-container .blui-app-bar-background {
-                background-image: url('../../../../../../assets/farm.jpg') !important;
+                background-image: url('/assets/farm.jpg') !important;
                 background-size: cover !important;
                 opacity: 0.5;
             }
