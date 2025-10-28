@@ -1497,10 +1497,9 @@
   resolved "https://registry.yarnpkg.com/@braintree/sanitize-url/-/sanitize-url-7.1.1.tgz#15e19737d946559289b915e5dad3b4c28407735e"
   integrity sha512-i1L7noDNxtFyL5DmZafWy1wRVhGehQmzZaz1HiN5e7iylJMSZR7ekOV7NsIqa5qBldlLrsKv4HbgFUVlQrz8Mw==
 
-"@brightlayer-ui/angular-themes@^9.0.0":
+"@brightlayer-ui/angular-themes@github:DimitriDessus-eaton/blui-angular-themes":
   version "9.0.2"
-  resolved "https://registry.yarnpkg.com/@brightlayer-ui/angular-themes/-/angular-themes-9.0.2.tgz#dc795b881482c8157f5ad2feb202bcea7158236c"
-  integrity sha512-lVbheqoHfKeeP1Q8LQH7LH5xuEunj+AEQslMI/DFxTs2+170nIIKeBgF9+BFP6n47ps3ZW2ls/boThqYOMq23w==
+  resolved "https://codeload.github.com/DimitriDessus-eaton/blui-angular-themes/tar.gz/e9d112a3a5137a6de9ab9a19ebbe8c1044f62cf2"
   dependencies:
     "@brightlayer-ui/colors" "^3.0.0"
     "@fontsource/open-sans" "^5.0.5"

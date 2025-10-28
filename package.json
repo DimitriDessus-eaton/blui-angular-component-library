@@ -57,7 +57,7 @@
     "doc": "src/docs/md"
   },
   "peerDependencies": {
-    "@brightlayer-ui/angular-themes": "^9.0.0"
+    "@brightlayer-ui/angular-themes": "github:DimitriDessus-eaton/blui-angular-themes"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.2.21",
@@ -74,7 +74,7 @@
     "@angular/platform-browser": "^18.2.14",
     "@angular/platform-browser-dynamic": "^18.2.14",
     "@angular/router": "^18.2.14",
-    "@brightlayer-ui/angular-themes": "^9.0.0",
+    "@brightlayer-ui/angular-themes": "github:DimitriDessus-eaton/blui-angular-themes",
     "@brightlayer-ui/colors": "^3.1.1",
     "@brightlayer-ui/eslint-config": "^3.0.0",
     "@brightlayer-ui/icons": "^2.1.0",
