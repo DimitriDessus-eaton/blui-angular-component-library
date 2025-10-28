@@ -1,7 +1,7 @@
 import { NgModule, SecurityContext } from '@angular/core';
 import { ScaffoldComponent } from './scaffold/scaffold.component';
 import { MatLegacyTabsModule as MatTabsModule } from '@angular/material/legacy-tabs';
-import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
+import { MarkdownModule, MARKED_OPTIONS } from 'ngx-markdown';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { MatLegacyFormFieldModule as MatFormFieldModule } from '@angular/material/legacy-form-field';
@@ -59,19 +59,21 @@ import { OverlayModule } from '@angular/cdk/overlay';
         MarkdownModule.forRoot({
             loader: HttpClientModule,
             sanitize: SecurityContext.NONE,
-            markedOptions: {
-                provide: MarkedOptions,
-                useValue: {
-                    gfm: true,
-                    breaks: false,
-                    pedantic: false,
-                    smartLists: true,
-                    smartypants: false,
-                },
-            },
         }),
         MatDividerModule,
         ReactiveFormsModule,
+    ],
+    providers: [
+        {
+            provide: MARKED_OPTIONS,
+            useValue: {
+                gfm: true,
+                breaks: false,
+                pedantic: false,
+                smartLists: true,
+                smartypants: false,
+            },
+        },
     ],
     exports: [
         ExampleCodeComponent,
