@@ -107,6 +107,6 @@
     "tslib": "^2.4.1",
     "typescript": "5.2.x",
     "yarn-audit-fix": "^10.0.7",
-    "zone.js": "~0.15.1"
+    "zone.js": "~0.14.x"
   }
 }
