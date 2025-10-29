@@ -1,4 +1,4 @@
-@import '../../../utility/utility';
+@use '../../../utility/utility' as *;
 
 /* RTL */
 [dir='rtl'] .blui-drawer-nav-item-content {

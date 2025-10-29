@@ -1,4 +1,4 @@
-@import '../utility/utility';
+@use '../utility/utility' as *;
 
 /* RTL */
 [dir='rtl'] .blui-score-card-header .blui-score-card-action-items-wrapper {

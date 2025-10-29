@@ -1,4 +1,4 @@
-@import '../utility/utility';
+@use '../utility/utility' as *;
 
 $statusWidth: 6px;
 $contentPaddingLeft: 16px;
