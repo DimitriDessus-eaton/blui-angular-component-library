@@ -1931,9 +1931,9 @@
   integrity sha512-Ag+9YM4ocKQx9AarydN0KY2j0ErMHNIocPDrVo8zAE44xLTjEtz81OdR68/cydGtk6m6jDb5Za3r2useMzYmSw==
 
 "@fontsource/open-sans@^5.0.5":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-5.1.0.tgz#3fb106a5e0a208bbe8e66ac5e9a2130afff6b859"
-  integrity sha512-g+mjF8gWUDwck9DrRCkhmFeEj7fskjtKZJKAQguVzSg93lc6ThakTHMRgs0dZfe5qBbktrV839tDrb4bIDyZSA==
+  version "5.2.7"
+  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-5.2.7.tgz#dc82cec21f3995163bfb15affea937083b4701fb"
+  integrity sha512-8yfgDYjE5O0vmTPdrcjV35y4yMnctsokmi9gN49Gcsr0sjzkMkR97AnKDe6OqZh2SFkYlR28fxOvi21bYEgMSw==
 
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.10"
