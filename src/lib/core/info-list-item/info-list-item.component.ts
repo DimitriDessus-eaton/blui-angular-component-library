@@ -33,7 +33,7 @@ type DividerType = 'full' | 'partial' | undefined;
             [disabled]="disabled"
         >
             <div
-                mat-list-icon
+                matListItemIcon
                 class="blui-info-list-item-icon-wrapper"
                 [class.blui-info-list-item-hide-padding]="hidePadding"
                 [class.blui-info-list-item-avatar]="avatar"
@@ -48,7 +48,6 @@ type DividerType = 'full' | 'partial' | undefined;
             </div>
             <div
                 class="mat-body-2 blui-info-list-item-title-wrapper"
-                matLine
                 [class.blui-info-list-item-wrap]="wrapTitle"
                 #title
             >
@@ -56,20 +55,18 @@ type DividerType = 'full' | 'partial' | undefined;
             </div>
             <div
                 class="mat-subtitle-2 blui-info-list-item-subtitle-wrapper"
-                matLine
                 [class.blui-info-list-item-wrap]="wrapSubtitle"
             >
                 <ng-content select="[blui-subtitle]"></ng-content>
             </div>
             <div
                 class="mat-subtitle-2 blui-info-list-item-info-wrapper"
-                matLine
                 [class.blui-info-list-item-wrap]="wrapInfo"
             >
                 <ng-content select="[blui-info]"></ng-content>
             </div>
             <blui-spacer class="blui-info-list-item-spacer"></blui-spacer>
-            <div class="blui-info-list-item-right-content">
+            <div class="blui-info-list-item-right-content" matListItemMeta>
                 <div #right class="blui-info-list-item-right-content-wrapper">
                     <ng-content select="[blui-right-content]"></ng-content>
                 </div>

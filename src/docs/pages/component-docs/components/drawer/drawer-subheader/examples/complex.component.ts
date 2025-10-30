@@ -4,7 +4,7 @@ import { DrawerNavItem } from 'src/lib/core';
 export const COMPLEX = `<blui-drawer style="width: 250px" [openOnHover]="false">
     <blui-drawer-header title="Energy Co."></blui-drawer-header>
     <blui-drawer-subheader [hideContentOnCollapse]="false">
-        <mat-form-field appearance="fill" style="height: 56px; width: 100%">
+        <mat-form-field appearance="fill" style="width: 100%">
             <mat-label>Organization</mat-label>
             <mat-select panelClass="drawer-complex-subheader-demo" [(value)]="selected">
                 <mat-option value="option1">ACME Co.</mat-option>
@@ -32,14 +32,14 @@ export const COMPLEX = `<blui-drawer style="width: 250px" [openOnHover]="false">
     encapsulation: ViewEncapsulation.None,
     styles: [
         `
-                    .drawer-complex-subheader-demo {
-                        max-width: 218px !important;
-                    }
-                    drawer-complex-subheader-demo .mat-mdc-select-panel {
-                        box-sizing: content-box;
-                        max-width: 250px !important;
-                    }
-                `,
+            .drawer-complex-subheader-demo {
+                max-width: 218px !important;
+            }
+            drawer-complex-subheader-demo .mat-mdc-select-panel {
+                box-sizing: content-box;
+                max-width: 250px !important;
+            }
+        `,
     ],
 })
 export class ComplexComponent {

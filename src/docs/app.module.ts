@@ -29,6 +29,7 @@ import { ComponentDocsModule } from './pages/component-docs/component-docs.modul
 import { MatChipsModule } from '@angular/material/chips';
 import { environment } from '../environments/environment';
 import { NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule } from 'ngx-google-analytics';
+import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 
 @NgModule({
     declarations: [AppComponent, NavigationComponent],
@@ -49,6 +50,12 @@ import { NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule } from 'ngx-go
         MatChipsModule,
         NgxGoogleAnalyticsModule.forRoot(environment.ga),
         NgxGoogleAnalyticsRouterModule,
+    ],
+    providers: [
+        {
+            provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
+            useValue: { subscriptSizing: 'dynamic' },
+        },
     ],
     bootstrap: [AppComponent],
 })
