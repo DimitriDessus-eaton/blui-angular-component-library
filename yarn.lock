@@ -1175,7 +1175,7 @@
 
 "@brightlayer-ui/angular-themes@github:DimitriDessus-eaton/blui-angular-themes#upgrade/angular":
   version "9.0.2"
-  resolved "https://codeload.github.com/DimitriDessus-eaton/blui-angular-themes/tar.gz/de1b5b441e8625216723c9b4c43cfbe17ad6b27b"
+  resolved "https://codeload.github.com/DimitriDessus-eaton/blui-angular-themes/tar.gz/755c5c7a013c5a5e396ebbd7f311e8591cf44f34"
   dependencies:
     "@brightlayer-ui/colors" "^3.0.0"
     "@fontsource/open-sans" "^5.0.5"

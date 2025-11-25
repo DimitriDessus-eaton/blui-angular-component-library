@@ -33,7 +33,7 @@ export type DrawerNavGroup = {
         `
                     .blui-drawer-nav-group-content .mat-mdc-list-base {
                         font-weight: 600;
-                        padding-top: 0;
+                        padding: 0;
                     }
                     .blui-drawer-nav-group-content .blui-drawer-nav-group-title {
                         font-weight: 600;

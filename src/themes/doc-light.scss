@@ -75,7 +75,17 @@
     .fixed-tab-group-banner {
         box-sizing: border-box;
         border-bottom: solid 1px $divider;
+        top: 64px !important;
     }
+
+    .mat-mdc-list-item:not([disabled]) {
+        cursor: pointer;
+        
+        &:hover {
+            background-color: rgba(map-get(blui.$blui-black, 500), 0.02);
+        }
+    }
+
     .doc-tab-content {
         h1,
         h2,
